@@ -4,6 +4,8 @@ This document describes the data, the variables, and any transformations or work
 
 **Note:** This content was created with data downloaded on: `Sat. Dec 20 12:42:26 2014`, which is approximately **60M** zipped. 
 
+The data included in this repository is intended to adhere to the philosophy of [Tidy Data] (http://vita.had.co.nz/papers/tidy-data.pdf) with some class-specific nuances (such as removing rowNames when saving the file).
+
 The stages in this `CodeBook` are broken down into:
 
 1. **Data Acqusition** _(optional)_ 
