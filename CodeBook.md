@@ -106,7 +106,53 @@ $ cat features.txt | grep "\-mean()" | wc -l
 33
 ```
 
+From further review of the features.txt file, the following issues were found:
 
+The following fields have three separate instances (e.g. for `-mean()` there is `-mean()-X`, `-mean()-Y`, `-mean()-Z`
+
+* tBodyAcc-XYZ
+
+* tGravityAcc-XYZ
+
+* tBodyAccJerk-XYZ
+
+* tBodyGyro-XYZ
+
+* tBodyGyroJerk-XYZ
+
+* fBodyAcc-XYZ
+
+* fBodyAccJerk-XYZ
+
+* fBodyGyro-XYZ
+
+The following fields only have a single instance (e.g. one `-mean()`)
+
+* tBodyAccMag
+
+* tGravityAccMag
+
+* tBodyAccJerkMag
+
+* tBodyGyroMag
+
+* tBodyGyroJerkMag
+
+* fBodyAccMag
+
+* fBodyBodyAccJerkMag (Note: this was refered to as fBodyAccJerkMag in other material)
+
+* fBodyBodyGyroMag (Note: this was refered to as fBodyGyroMag in other material)
+
+* fBodyBodyGyroJerkMag (Note: this was refered to as fBodyGyroJerkMag in other material)
+
+```
+These can be tested with something similar to:
+$ cat features.txt | grep -E "fBodyGyro-[XYZ]?" | grep "\-mean()"
+424 fBodyGyro-mean()-X
+425 fBodyGyro-mean()-Y
+426 fBodyGyro-mean()-Z
+````
 
 #### Attribute Information:
 
