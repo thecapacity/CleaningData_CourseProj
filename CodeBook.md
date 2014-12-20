@@ -109,6 +109,8 @@ For each record in the dataset the following information is provided:
 
 * An identifier of the subject who carried out the experiment.
 
+For more detailed information, please check out `features.txt` and `features_info.txt` for more information on the  features from the original data set. 
+
 #### Collection Information:
 Using the phone's embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity were captured at a constant rate of **50Hz**.
 
