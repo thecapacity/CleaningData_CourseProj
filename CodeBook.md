@@ -66,7 +66,7 @@ In order to create the resultant tidy dataset, the following steps are executed:
 
 4. Extracts only the measurements on the mean and standard deviation for each measurement.
 
-    ** Note: For this assignment mean and standard deviation measurements are assumed to be those explicitly marked as `-mean()` or `-std()`. **
+    **Note: For this assignment mean and standard deviation measurements are assumed to be those explicitly marked as `-mean()` or `-std()`.**
 
 5. Uses descriptive activity names to rename the activities in the data set.
 
