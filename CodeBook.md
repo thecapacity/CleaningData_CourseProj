@@ -81,7 +81,7 @@ The raw data contains information on experiments carried out with a group of 30 
 
 Each person performed six activities wearing a smartphone (Samsung Galaxy S II) on the waist.
 
-Those activities are broken down into the following categories:
+Those activities (and values) are broken down into the following categories (also defined in `activity_labels.txt` from the original data file):
 
 * **WALKING**
 
