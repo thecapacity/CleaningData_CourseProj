@@ -13,6 +13,12 @@ The following items are includes in this repository for submission:
 
 4. The resultant tidy data set, with the average of each variable for each activity and each subject.
 
+### Requirements
+
+The contents of this repository were created on a Macbook running **OSX 10.9.5** and **RStudio Version 0.98.1087**
+
+There should be no special prerequisites.
+
 ### Usage
 
 [This repository](https://github.com/thecapacity/CleaningData_CourseProj) includes an R script called **run_analysis.R** that does the following:
