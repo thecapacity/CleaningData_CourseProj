@@ -11,7 +11,7 @@ The following items are includes in this repository for submission:
 
 3. A code book, [CodeBook.md](https://github.com/thecapacity/CleaningData_CourseProj/blob/master/CodeBook.md), that describes the variables, the data, and any transformations or work that you performed to clean up the data.
 
-4. The resultant [tidy data set](http://git ) with the average of each variable for each activity and each subject.
+4. The resultant tidy data set, with the average of each variable for each activity and each subject.
 
 ### Usage
 
