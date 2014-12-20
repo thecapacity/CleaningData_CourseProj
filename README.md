@@ -19,6 +19,11 @@ The contents of this repository were created on a Macbook running **OSX 10.9.5**
 
 There should be no special prerequisites.
 
+It is not strictly necessary to re-run all elements of this repository, the data included can be read directly into an R script with the command:
+```
+data <- read.table(file_path, header = TRUE) 
+```
+
 ### Usage
 
 [This repository](https://github.com/thecapacity/CleaningData_CourseProj) includes an R script called **run_analysis.R** that does the following:
