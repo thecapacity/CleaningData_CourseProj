@@ -95,6 +95,19 @@ Those activities (and values) are broken down into the following categories (als
 
 * **LAYING**
 
+For the purposes of extraction we are only interested in data with a *-mean() or *-std() value.
+
+Of those measures, there are _33_ mentions of either `-std()` or `-mean()` as measured by a quick grep:
+```
+$ cat features.txt | grep "\-std()" | wc -l
+33
+
+$ cat features.txt | grep "\-mean()" | wc -l
+33
+```
+
+
+
 #### Attribute Information:
 
 For each record in the dataset the following information is provided:
