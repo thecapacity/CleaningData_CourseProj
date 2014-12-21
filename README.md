@@ -11,15 +11,17 @@ The following items are includes in this repository for submission:
 
 3. A code book, [CodeBook.md](https://github.com/thecapacity/CleaningData_CourseProj/blob/master/CodeBook.md), that describes the variables, the data, and any transformations or work that you performed to clean up the data.
 
-4. The resultant tidy data set, with the average of each variable for each activity and each subject.
+4. The resultant [tidy data set](https://github.com/thecapacity/CleaningData_CourseProj/blob/master/tidy_data.txt), with the average of each variable for each activity and each subject.
+
+**Note: Raw Dataset is here: https://raw.githubusercontent.com/thecapacity/CleaningData_CourseProj/master/tidy_data.txt**
 
 ### Requirements
 
 The contents of this repository were created on a Macbook running **OSX 10.9.5** and **RStudio Version 0.98.1087**
 
-There should be no special prerequisites.
+The only library requirement is `data.table`
 
-It is not strictly necessary to re-run all elements of this repository, the data included can be read directly into an R script with the command:
+It is not strictly necessary to re-run all elements of this repository, the tidy data included (from step #4) can be read directly into an R script with the command:
 ```
 data <- read.table(file_path, header = TRUE) 
 ```
@@ -34,9 +36,13 @@ data <- read.table(file_path, header = TRUE)
 
 3. Uses descriptive activity names to name the activities in the data set.
 
-4. Appropriately labels the data set with descriptive variable names. 
+4. Appropriately labels the data set with descriptive variable names.
 
-From the data set in step 4, a second independent tidy data set [tidy_data](http://git ) is created, with the average of each variable for each activity and each subject.
+5. Creates a second independent tidy data set, with the average of each variable for each activity and each subject.
+
+To run this script it is recommended, but not required, that you have unzipped the original dataset (see below) into the working directory. More details are in the [CodeBook](https://github.com/thecapacity/CleaningData_CourseProj/blob/master/CodeBook.md) also included in this repository.
+
+Assuming the data is available, the script **run_analysis.R** can be executed via normal R-means (e.g. source() or Cmd-Enter in R-Studio on a Mac).
 
 ### Background
 
