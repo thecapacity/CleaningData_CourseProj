@@ -4,7 +4,7 @@
 library(data.table)
 ##
 # Ensure pristine working environment
-rm(list=ls())
+## rm(list=ls())
 ## However, it has been commented out for submission to ensure no disruptivie side-effets for others
 
 ######################## Get data if it doesn't exist... #########################
