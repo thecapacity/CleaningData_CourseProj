@@ -81,9 +81,7 @@ In order to create the resultant tidy dataset, the following steps are executed:
 
 ### Data Definition:
 
-The raw data contains information on experiments carried out with a group of 30 volunteers within an age bracket of 19-48 years.
-
-Each person performed six activities wearing a smartphone (Samsung Galaxy S II) on the waist.
+The raw data contains information on experiments carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities wearing a smartphone (Samsung Galaxy S II) on the waist.
 
 Those activities (and values) are broken down into the following categories (also defined in `activity_labels.txt` from the original data file):
 
@@ -144,11 +142,11 @@ The following fields only have a single instance (e.g. one `-mean()`)
 
 * fBodyAccMag
 
-* fBodyBodyAccJerkMag (Note: this was refered to as fBodyAccJerkMag in other material)
+* fBodyBodyAccJerkMag (Note: this is refered to as fBodyAccJerkMag in `features_info.txt`)
 
-* fBodyBodyGyroMag (Note: this was refered to as fBodyGyroMag in other material)
+* fBodyBodyGyroMag (Note: this is refered to as fBodyGyroMag in `features_info.txt`)
 
-* fBodyBodyGyroJerkMag (Note: this was refered to as fBodyGyroJerkMag in other material)
+* fBodyBodyGyroJerkMag (Note: this is refered to as fBodyGyroJerkMag in `features_info.txt`)
 
 ```
 These can be tested with something similar to:
@@ -158,21 +156,21 @@ $ cat features.txt | grep -E "fBodyGyro-[XYZ]?" | grep "\-mean()"
 426 fBodyGyro-mean()-Z
 ````
 
-#### Attribute Information:
+These values are later renamed according the following methodology:
+* The mean|std descriptors are moved to the beginning of the name.
+* The [XYZ] axis descriptor is moved to the beginning of the name.
+* Abbreviations are expanded (e.g. Acc -> Acceleration, Gyro -> Gyroscope, Mag -> Magnitude)
+* The time and feature [t|f] identifiers are kept.
 
-For each record in the dataset the following information is provided:
+Professionally I would leave the column names the same as the original dataset, as:
+1. I think they're already fairly clear
 
-* Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+2. It shows continuity with the original dataset
 
-* Triaxial Angular velocity from the gyroscope.
+3. The descriptions are already written.
 
-* A 561-feature vector with time and frequency domain variables.
-
-* Its activity label.
-
-* An identifier of the subject who carried out the experiment.
-
-For more detailed information, please check out `features.txt` and `features_info.txt` for more information on the  features from the original data set. 
+However, since assignment suggested a mandatory change that was done as described above via _explicit_ assignment.
+Some recommendations suggested autoamted 'find/replace' but I believe those are inherently fragile vs. an "explicit cast" to new names.
 
 #### Collection Information:
 Using the phone's embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity were captured at a constant rate of **50Hz**.
@@ -182,3 +180,7 @@ The experiments were also video-recorded to label the data manually. The obtaine
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in **fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window)**.
 
 The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore **a filter with 0.3 Hz cutoff** frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+
+For more information on please check out `features.txt` and `features_info.txt` from the original data set. 
+
+
